@@ -40,7 +40,7 @@ public class AudioPlayer
         clip.loop(Clip.LOOP_CONTINUOUSLY); 
     } 
   
-    public static void ring()  
+    public void ring()  
     { 
         try
         { 
