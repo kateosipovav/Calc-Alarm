@@ -21,7 +21,8 @@ public class AudioPlayer
     String status; 
       
     AudioInputStream audioInputStream; 
-    static String filePath; 
+    public String filePath =          "519155__tictac9__inst-1-funk-short-version-tictac9.wav"; 
+; 
   
     // constructor to initialize streams and clip 
     public AudioPlayer() 
@@ -40,7 +41,7 @@ public class AudioPlayer
         clip.loop(Clip.LOOP_CONTINUOUSLY); 
     } 
   
-    public void ring()  
+   /* public void ring()  
     { 
         try
         { 
@@ -62,7 +63,7 @@ public class AudioPlayer
                 if (c == 4) 
                 break; 
             } 
-            sc.close(); */
+            sc.close(); 
             
         }  
           
@@ -74,7 +75,7 @@ public class AudioPlayer
           } 
     } 
       
-    // Work as the user enters his choice 
+   */ // Work as the user enters his choice 
       
     private void gotoChoice(int c) 
             throws IOException,LineUnavailableException,UnsupportedAudioFileException  
