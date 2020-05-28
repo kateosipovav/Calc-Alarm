@@ -11,14 +11,15 @@ public class MyTimerTask extends TimerTask {
 	@Override
 	public void run() {
     Function.genRandF();
+    AudioPlayer ap = new AudioPlayer();
    do{ 
-    AudioPlayer.ring(); 
+    ap.ring();
     System.out.println("Enter the answer:::");
     Scanner input = new Scanner(System.in);  
     double userAnswer = input.nextDouble(); 
   }while(Function.answer() != userAnswer); // TODO: compare up to three digits after the comma 
   System.out.println("Great job!");
-  AudioPlayer.stop();
+  ap.stop();
   
 	}
 }
