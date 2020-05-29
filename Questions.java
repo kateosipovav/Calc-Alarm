@@ -1,4 +1,3 @@
-
 public class Questions {
    int u=(int)(Math.random()*10);
    int l=(int)(Math.random()*20)-10;
@@ -11,25 +10,25 @@ public class Questions {
       System.out.println("upper bound:"+u);
       System.out.println("∫");
       System.out.println("Lower bound:"+l);
-      System.out.println("intergrand:"+c1+"x^"+e+c2+"x^"+e2+c3);
+      System.out.println("intergrand:" + c1 + "x^(" + e + ")+(" + c2 + "x^" + e2 + ")+(" + c3 + ")");
    }
    public void type2() {
       System.out.println("upper bound:"+u);
       System.out.println("∫");
       System.out.println("Lower bound:"+l);
-      System.out.println("intergrand:"+"("+c1+"x^"+(e-1)+")"+"1/"+"("+c2+"x^"+e+")");
+      System.out.println("intergrand:" + "(" + c1 + "x^" + (e-1) + ")" + "/" + "(" + c2 + "x^" + e + ")");
    }
    public void type3() {
       System.out.println("upper bound:"+u);
       System.out.println("∫");
       System.out.println("Lower bound:"+l);
-      System.out.println("intergrand:"+c1+"*"+"-sin("+c2+"x^"+e+")");
+      System.out.println("intergrand:" + c1 + "*" + "-sin(" + c2 + "x^" + e + ")");
    }
    public void type4() {
       System.out.println("upper bound:"+u);
       System.out.println("∫");
       System.out.println("Lower bound:"+l);
-      System.out.println("intergrand:"+c1+"*"+"cos("+c2+"x^"+e+")");
+      System.out.println("intergrand:" + c1 + "*" + "cos(" + c2 + "x^" + e + ")");
    }
    public double s1() {
       if(u==l) {
