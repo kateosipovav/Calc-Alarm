@@ -15,6 +15,7 @@ public class Clock {
 	@SuppressWarnings("deprecation")
 	Clock(int hr, int min)
 	{
+    System.out.println("Hello from clock constructor!");
 		timer = new Timer();
 		running = new Date();
 		
