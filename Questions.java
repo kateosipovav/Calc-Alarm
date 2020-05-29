@@ -1,3 +1,4 @@
+
 public class Questions {
    int u=(int)(Math.random()*10);
    int l=(int)(Math.random()*20)-10;
