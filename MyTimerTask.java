@@ -26,25 +26,26 @@ public class MyTimerTask extends TimerTask {
 	
 	private void ring() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
 		System.out.println("Hello from run()");
-		Function.genRandF();
+		Function f = new Function();
+		f.genRandF();
 		double userAnswer = -1000;
 		
 		//////////////////////////////
 		AudioInputStream inputStream = AudioSystem.getAudioInputStream(new File("519155__tictac9__inst-1-funk-short-version-tictac9.wav"));
 		Clip clip = AudioSystem.getClip();
 
-		//Thread.sleep(10000); // looping as long as this thread is alive
+		//Thread.sleep(10000);
+		clip.open(inputStream);
+		clip.start();
+		clip.loop(Clip.LOOP_CONTINUOUSLY);
 		do{ 
 			///////////////////////////
-			clip.open(inputStream);
-			clip.start();
-			clip.loop(Clip.LOOP_CONTINUOUSLY);
 			///////////////////////////
 			System.out.println("Enter the answer:::");
-			//System.out.println(Function.answer());	//prints the answer.. if you're too lazy to actually find the answer
+			//System.out.println(f.answer());	//prints the answer.. if you're too lazy to actually find the answer
 			Scanner input = new Scanner(System.in);
 			userAnswer = input.nextDouble();
-		}while((int)(Function.answer()*1000) != (int)(userAnswer*1000));
+		}while((int)(f.answer()*1000) != (int)(userAnswer*1000));
 		
 		System.out.println("Great job!");
 
