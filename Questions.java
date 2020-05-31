@@ -54,8 +54,8 @@ public class Questions {
          return 0;
       }
       double sc1=c1/(e*c2);
-      double up=c2+u^e;
-      double lp=c2+l^e;
+      double up=c2+Math.pow(u, e);
+      double lp=c2+Math.pow(l, e);
       double sum=sc1*Math.log(up)-sc1*Math.log(lp);
       return sum;
    }
@@ -64,8 +64,8 @@ public class Questions {
          return 0;
       }
       double sc1=c1/(e*c2);
-      double up=(c2+u^e)/Math.PI;
-      double lp=(c2+l^e)/Math.PI;
+      double up=(c2+Math.pow(u, e))/Math.PI;
+      double lp=(c2+Math.pow(l, e))/Math.PI;
       double sum=sc1*Math.cos(up)-sc1*Math.cos(lp);
       return sum;
    }
@@ -74,8 +74,8 @@ public class Questions {
          return 0;
       }
       double sc1=c1/(e*c2);
-      double up=(c2+u^e)/Math.PI;
-      double lp=(c2+l^e)/Math.PI;
+      double up=(c2+Math.pow(u, e))/Math.PI;
+      double lp=(c2+Math.pow(l, e))/Math.PI;
       double sum=sc1*Math.sin(up)-sc1*Math.sin(lp);
       return sum;
    }
