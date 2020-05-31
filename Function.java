@@ -1,12 +1,12 @@
 //import QS.Questions;
 public class Function {
    public static Questions a=new Questions();
-   public static int ran;
-   public static void setRan(){
-    ran = (int)(Math.random()*4)+1;
+   public int ran;
+   Function(){
+	   //ran = (int)(Math.random()*4)+1;
+	   ran=4;
    }
-   public static double answer() {
-     setRan();
+   public double answer() {
       if(ran==1) 
          return a.s1();
       if(ran==2)
@@ -17,8 +17,7 @@ public class Function {
          return a.s4();
       return 0;
    }
-   public static void genRandF(){
-      setRan();
+   public void genRandF(){
       if(ran==1)
          a.type1();   
       if(ran==2)
